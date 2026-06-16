@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
       <head>
-        {/* 2. Google Tag Manager - Head Script */}
+        {/* 2. Google Tag Manager - Head Script  */}
         <Script
           id="gtm-script"
           strategy="afterInteractive"

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -145,7 +145,10 @@ export default function PortfolioPage() {
             <button className="bg-orange-600 text-white px-10 py-3.5 rounded font-bold hover:bg-orange-700 transition shadow-md uppercase text-sm tracking-widest">
               +1 646 344 0382
             </button>
-            <button onClick={() => Crisp.chat.open()} className="border-2 border-slate-800 text-slate-900 px-10 py-3.5 rounded font-bold hover:bg-slate-800 hover:text-white transition uppercase text-sm tracking-widest">
+            <button
+              onClick={() => Crisp.chat.open()}
+              className="border-2 border-slate-800 text-slate-900 px-10 py-3.5 rounded font-bold hover:bg-slate-800 hover:text-white transition uppercase text-sm tracking-widest"
+            >
               Live Chat
             </button>
             <button
@@ -159,129 +162,137 @@ export default function PortfolioPage() {
       </section>
 
       {/* ================= BOTTOM CONTACT FORM SECTION ================= */}
-     <section className="py-20 relative bg-white">
-           <div className="max-w-5xl mx-auto px-6">
-             <div className="text-center mb-10 space-y-2">
-               <h2 className="text-2xl font-bold text-slate-900">
-                 Drop Us A Line
-               </h2>
-               <p className="text-orange-600 font-bold text-sm uppercase tracking-wide">
-                 Fill out your details below and we'll get back to you shortly.
-               </p>
-             </div>
-   
-             <div className="bg-white p-8 md:p-12 rounded-3xl shadow-[0_0_50px_-12px_rgba(234,88,12,0.15)] border border-orange-100 max-w-4xl mx-auto relative z-10">
-               <form
-                 action="https://api.web3forms.com/submit"
-                 method="POST"
-                 className="flex flex-col gap-6"
-               >
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                   <div className="flex flex-col gap-6">
-                     <input
-                       type="hidden"
-                       name="access_key"
-                       value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2"
-                     />
-   
-                     <input
-                       type="text"
-                       placeholder="Name"
-                       required
-                       name="name"
-                       className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white"
-                     />
-                     <input
-                       type="email"
-                       placeholder="Email"
-                       name="email"
-                       required
-                       className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white"
-                     />
-                     <select
-                       name="service"
-                       className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-500 bg-white appearance-none"
-                     >
-                       <option value="" disabled selected>
-                         Select Service
-                       </option>
-                       <option value="book-writing">Book Writing</option>
-                       <option value="ebook-writing">
-                         eBook Writing & Publishing
-                       </option>
-                       <option value="book-editing">
-                         Book Editing & Proofreading
-                       </option>
-                       <option value="cover-design">Book Cover Design</option>
-                       <option value="book-illustrations">
-                         Book Illustrations
-                       </option>
-                       <option value="book-printing">Book Printing</option>
-                       <option value="book-marketing">Book Marketing</option>
-                       <option value="authors-website">Author's Website</option>
-                       <option value="amazon-publishing">Amazon Publishing</option>
-                       <option value="article-writing">Article Writing</option>
-                       <option value="book-trailer">Book Trailer Services</option>
-                       <option value="kindle-vella">Kindle Vella</option>
-                     </select>
-                   </div>
-                   <div className="flex flex-col gap-6">
-                     <input
-                       type="tel"
-                       name="tel"
-                       placeholder="Phone Number"
-                       required
-                       className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white"
-                     />
-                     <textarea
-                       placeholder="Message"
-                       required
-                       name="message"
-                       className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white flex-grow min-h-[120px] resize-none"
-                     ></textarea>
-                   </div>
-                 </div>
-                 <button
-                   type="submit"
-                   className="w-full bg-orange-600 text-white font-bold py-4 rounded-md uppercase tracking-wider hover:bg-orange-700 transition shadow-md"
-                 >
-                   Submit
-                 </button>
-               </form>
-             </div>
-   
-             {/* Contact Info Cards */}
-             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-16">
-               <div className="text-center space-y-3">
-                 <h4 className="font-bold text-slate-900">Discuss Your Project</h4>
-                 <button
-                   onClick={() => Crisp.chat.open()}
-                   className="w-full border border-orange-400 text-orange-600 font-medium py-3 px-4 rounded-md hover:bg-orange-50 transition bg-white"
-                 >
-                   Live Chat
-                 </button>
-               </div>
-               <div className="text-center space-y-3">
-                 <h4 className="font-bold text-slate-900">Make a Call</h4>
-                 <a
-                   href="tel:+1 646 344 0382"
-                   className="block w-full border border-orange-400 text-orange-600 font-medium py-3 px-4 rounded-md hover:bg-orange-50 transition bg-white"
-                 >
-                   +1 646 344 0382
-                 </a>
-               </div>
-               <div className="text-center space-y-3">
-                 <h4 className="font-bold text-slate-900">Send us Email</h4>
-                 <a
-                   href="mailto:info@penguinbookpublishers.net"
-                   className="block w-full border border-orange-400 text-orange-600 font-medium py-3 px-2 rounded-md hover:bg-orange-50 transition bg-white text-sm md:text-base"
-                 >
-                   info@penguinbookpublishers.net
-                 </a>
-               </div>
-             </div>
-           </div>
-         </section>
+      <section className="py-20 relative bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-10 space-y-2">
+            <h2 className="text-2xl font-bold text-slate-900">
+              Drop Us A Line
+            </h2>
+            <p className="text-orange-600 font-bold text-sm uppercase tracking-wide">
+              Fill out your details below and we'll get back to you shortly.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 md:p-12 rounded-3xl shadow-[0_0_50px_-12px_rgba(234,88,12,0.15)] border border-orange-100 max-w-4xl mx-auto relative z-10">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              className="flex flex-col gap-6"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex flex-col gap-6">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2"
+                  />
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://penguinbookpublishers.com/thank-you"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    required
+                    name="name"
+                    className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    required
+                    className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white"
+                  />
+                  <select
+                    name="service"
+                    required
+                    className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-500 bg-white appearance-none"
+                  >
+                    <option value="" disabled selected>
+                      Select Service
+                    </option>
+                    <option value="book-writing">GhostWriting</option>
+                    <option value="book-publishing">Book Publishing</option>
+                    <option value="book-editing">
+                      Book Editing & Proofreading
+                    </option>
+                    <option value="cover-design">Book Cover Design</option>
+                    <option value="book-illustrations">
+                      Book Illustrations
+                    </option>
+                    <option value="book-printing">Book Printing</option>
+                    <option value="book-marketing">Book Marketing</option>
+                    <option value="authors-website">Author's Website</option>
+                    <option value="global-distributions">
+                      Global Distributions
+                    </option>
+                    <option value="article-writing">
+                      Article Writing & Blogs
+                    </option>
+                    <option value="book-trailer">Book Video Trailer</option>
+                    <option value="audio-book">Audio Book</option>
+                  </select>
+                </div>
+                <div className="flex flex-col gap-6">
+                  <input
+                    type="tel"
+                    name="tel"
+                    placeholder="Phone Number"
+                    required
+                    className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white"
+                  />
+                  <textarea
+                    placeholder="Message"
+                    required
+                    name="message"
+                    className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white flex-grow min-h-[120px] resize-none"
+                  ></textarea>
+                </div>
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-orange-600 text-white font-bold py-4 rounded-md uppercase tracking-wider hover:bg-orange-700 transition shadow-md"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+
+          {/* Contact Info Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-16">
+            <div className="text-center space-y-3">
+              <h4 className="font-bold text-slate-900">Discuss Your Project</h4>
+              <button
+                onClick={() => Crisp.chat.open()}
+                className="w-full border border-orange-400 text-orange-600 font-medium py-3 px-4 rounded-md hover:bg-orange-50 transition bg-white"
+              >
+                Live Chat
+              </button>
+            </div>
+            <div className="text-center space-y-3">
+              <h4 className="font-bold text-slate-900">Make a Call</h4>
+              <a
+                href="tel:+1 646 344 0382"
+                className="block w-full border border-orange-400 text-orange-600 font-medium py-3 px-4 rounded-md hover:bg-orange-50 transition bg-white"
+              >
+                +1 646 344 0382
+              </a>
+            </div>
+            <div className="text-center space-y-3">
+              <h4 className="font-bold text-slate-900">Send us Email</h4>
+              <a
+                href="mailto:info@penguinbookpublishers.net"
+                className="block w-full border border-orange-400 text-orange-600 font-medium py-3 px-2 rounded-md hover:bg-orange-50 transition bg-white text-sm md:text-base"
+              >
+                info@penguinbookpublishers.net
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

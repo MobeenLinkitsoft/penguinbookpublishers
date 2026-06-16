@@ -59,12 +59,12 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                 method="POST"
                 className="space-y-4"
               >
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2"
-                />
-
+                <input type="hidden" name="access_key" value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2" />
+                  <input 
+    type="hidden" 
+    name="redirect" 
+    value="https://penguinbookpublishers.com/thank-you" 
+  />
                 <input
                   type="text"
                   placeholder="Full Name *"

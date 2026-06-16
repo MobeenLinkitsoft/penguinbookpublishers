@@ -95,11 +95,12 @@ export default function BookEditingPage() {
                 method="POST"
                 className="space-y-4"
               >
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2"
-                />
+                <input type="hidden" name="access_key" value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2" />
+                  <input 
+    type="hidden" 
+    name="redirect" 
+    value="https://penguinbookpublishers.com/thank-you" 
+  />
 
                 <input
                   type="text"
@@ -122,31 +123,27 @@ export default function BookEditingPage() {
                   required
                   className="w-full border-b-2 border-slate-200 p-3 text-sm focus:border-orange-500 outline-none transition bg-transparent"
                 />
-                <select
-                  name="service"
-                  required
-                  className="w-full border-b-2 border-slate-200 p-3 text-sm focus:border-orange-500 outline-none transition text-slate-500 bg-transparent"
-                >
-                  <option value="" disabled selected>
-                    Select Service
-                  </option>
-                  <option value="book-writing">Book Writing</option>
-                  <option value="ebook-writing">
-                    eBook Writing & Publishing
-                  </option>
-                  <option value="book-editing">
-                    Book Editing & Proofreading
-                  </option>
-                  <option value="cover-design">Book Cover Design</option>
-                  <option value="book-illustrations">Book Illustrations</option>
-                  <option value="book-printing">Book Printing</option>
-                  <option value="book-marketing">Book Marketing</option>
-                  <option value="authors-website">Author's Website</option>
-                  <option value="amazon-publishing">Amazon Publishing</option>
-                  <option value="article-writing">Article Writing</option>
-                  <option value="book-trailer">Book Trailer Services</option>
-                  <option value="kindle-vella">Kindle Vella</option>
-                </select>
+               <select
+  name="service"
+  required
+  className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-500 bg-white appearance-none"
+>
+  <option value="" disabled selected>
+    Select Service
+  </option>
+  <option value="book-writing">GhostWriting</option>
+  <option value="book-publishing">Book Publishing</option>
+  <option value="book-editing">Book Editing & Proofreading</option>
+  <option value="cover-design">Book Cover Design</option>
+  <option value="book-illustrations">Book Illustrations</option>
+  <option value="book-printing">Book Printing</option>
+  <option value="book-marketing">Book Marketing</option>
+  <option value="authors-website">Author's Website</option>
+  <option value="global-distributions">Global Distributions</option>
+  <option value="article-writing">Article Writing & Blogs</option>
+  <option value="book-trailer">Book Video Trailer</option>
+  <option value="audio-book">Audio Book</option>
+</select>
                 <textarea
                   placeholder="Message"
                   name="message"
@@ -462,7 +459,13 @@ export default function BookEditingPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Left Column */}
                 <div className="flex flex-col gap-6">
-                  <input type="hidden" name="access_key" value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2" />
+                   <input type="hidden" name="access_key" value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2" />
+                  <input 
+    type="hidden" 
+    name="redirect" 
+    value="https://penguinbookpublishers.com/thank-you" 
+  />
+  
                   <input
                     type="text"
                     name="name"
@@ -477,29 +480,27 @@ export default function BookEditingPage() {
                     required
                     className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white"
                   />
-                  <select name="service" className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-500 bg-white appearance-none">
-                    <option value="" disabled selected>
-                      Select Service
-                    </option>
-                    <option value="book-writing">Book Writing</option>
-                    <option value="ebook-writing">
-                      eBook Writing & Publishing
-                    </option>
-                    <option value="book-editing">
-                      Book Editing & Proofreading
-                    </option>
-                    <option value="cover-design">Book Cover Design</option>
-                    <option value="book-illustrations">
-                      Book Illustrations
-                    </option>
-                    <option value="book-printing">Book Printing</option>
-                    <option value="book-marketing">Book Marketing</option>
-                    <option value="authors-website">Author's Website</option>
-                    <option value="amazon-publishing">Amazon Publishing</option>
-                    <option value="article-writing">Article Writing</option>
-                    <option value="book-trailer">Book Trailer Services</option>
-                    <option value="kindle-vella">Kindle Vella</option>
-                  </select>
+                 <select
+  name="service"
+  required
+  className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-500 bg-white appearance-none"
+>
+  <option value="" disabled selected>
+    Select Service
+  </option>
+  <option value="book-writing">GhostWriting</option>
+  <option value="book-publishing">Book Publishing</option>
+  <option value="book-editing">Book Editing & Proofreading</option>
+  <option value="cover-design">Book Cover Design</option>
+  <option value="book-illustrations">Book Illustrations</option>
+  <option value="book-printing">Book Printing</option>
+  <option value="book-marketing">Book Marketing</option>
+  <option value="authors-website">Author's Website</option>
+  <option value="global-distributions">Global Distributions</option>
+  <option value="article-writing">Article Writing & Blogs</option>
+  <option value="book-trailer">Book Video Trailer</option>
+  <option value="audio-book">Audio Book</option>
+</select>
                 </div>
 
                 {/* Right Column */}

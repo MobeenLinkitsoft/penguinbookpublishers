@@ -12,18 +12,19 @@ export default function Navbar() {
 
   // Updated to include exact URLs for every service
   const servicesList = [
-    { title: "Book Writing", href: "/services/book-writing" },
-    { title: "eBook Writing & Publishing", href: "/services/ebook-writing" },
+    { title: "GhostWriting", href: "/services/book-writing" },
+    { title: "Book Publishing", href: "/services/ebook-writing" },
     { title: "Book Editing & Proofreading", href: "/services/proofreading" },
     { title: "Book Cover Design", href: "/services/cover-design" },
     { title: "Book Illustrations", href: "/services/book-illustration" },
     { title: "Book Printing", href: "/services/book-printing" },
     { title: "Book Marketing", href: "/services/book-marketing" },
     { title: "Author's Website", href: "/services/authors-website" },
-    { title: "Amazon Publishing", href: "/services/amazon-publishing" },
-    { title: "Article Writing", href: "/services/article-writing" },
-    { title: "Book Trailer Services", href: "/services/book-trailer" },
-    { title: "Kindle Vella", href: "/services/kindle-vella" },
+    { title: "Global Distributions", href: "/services/amazon-publishing" },
+    { title: "Article Writing & Blogs", href: "/services/article-writing" },
+    { title: "Book Video Trailer", href: "/services/book-trailer" },
+    { title: "Audio Book", href: "/services/audio-book" },
+    // { title: "Kindle Vella", href: "/services/kindle-vella" },
   ];
 
   return (

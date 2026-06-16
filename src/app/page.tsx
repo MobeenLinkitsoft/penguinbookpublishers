@@ -158,6 +158,11 @@ export default function Home() {
                   name="access_key"
                   value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2"
                 />
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="https://penguinbookpublishers.com/thank-you"
+                />
 
                 <input
                   type="text"
@@ -183,15 +188,13 @@ export default function Home() {
                 <select
                   name="service"
                   required
-                  className="w-full border-b-2 border-slate-200 p-3 text-sm focus:border-orange-500 outline-none transition text-slate-500 bg-transparent"
+                  className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-500 bg-white appearance-none"
                 >
                   <option value="" disabled selected>
                     Select Service
                   </option>
-                  <option value="book-writing">Book Writing</option>
-                  <option value="ebook-writing">
-                    eBook Writing & Publishing
-                  </option>
+                  <option value="book-writing">GhostWriting</option>
+                  <option value="book-publishing">Book Publishing</option>
                   <option value="book-editing">
                     Book Editing & Proofreading
                   </option>
@@ -200,10 +203,14 @@ export default function Home() {
                   <option value="book-printing">Book Printing</option>
                   <option value="book-marketing">Book Marketing</option>
                   <option value="authors-website">Author's Website</option>
-                  <option value="amazon-publishing">Amazon Publishing</option>
-                  <option value="article-writing">Article Writing</option>
-                  <option value="book-trailer">Book Trailer Services</option>
-                  <option value="kindle-vella">Kindle Vella</option>
+                  <option value="global-distributions">
+                    Global Distributions
+                  </option>
+                  <option value="article-writing">
+                    Article Writing & Blogs
+                  </option>
+                  <option value="book-trailer">Book Video Trailer</option>
+                  <option value="audio-book">Audio Book</option>
                 </select>
                 <textarea
                   placeholder="Message"
@@ -793,6 +800,11 @@ export default function Home() {
                     name="access_key"
                     value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2"
                   />
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://penguinbookpublishers.com/thank-you"
+                  />
 
                   <input
                     type="text"
@@ -810,15 +822,14 @@ export default function Home() {
                   />
                   <select
                     name="service"
+                    required
                     className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-500 bg-white appearance-none"
                   >
                     <option value="" disabled selected>
                       Select Service
                     </option>
-                    <option value="book-writing">Book Writing</option>
-                    <option value="ebook-writing">
-                      eBook Writing & Publishing
-                    </option>
+                    <option value="book-writing">GhostWriting</option>
+                    <option value="book-publishing">Book Publishing</option>
                     <option value="book-editing">
                       Book Editing & Proofreading
                     </option>
@@ -829,10 +840,14 @@ export default function Home() {
                     <option value="book-printing">Book Printing</option>
                     <option value="book-marketing">Book Marketing</option>
                     <option value="authors-website">Author's Website</option>
-                    <option value="amazon-publishing">Amazon Publishing</option>
-                    <option value="article-writing">Article Writing</option>
-                    <option value="book-trailer">Book Trailer Services</option>
-                    <option value="kindle-vella">Kindle Vella</option>
+                    <option value="global-distributions">
+                      Global Distributions
+                    </option>
+                    <option value="article-writing">
+                      Article Writing & Blogs
+                    </option>
+                    <option value="book-trailer">Book Video Trailer</option>
+                    <option value="audio-book">Audio Book</option>
                   </select>
                 </div>
                 <div className="flex flex-col gap-6">

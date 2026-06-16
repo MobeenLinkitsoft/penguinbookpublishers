@@ -91,11 +91,25 @@ export default function ContactPage() {
 
           {/* Form Container with Soft Orange Shadow */}
           <div className="bg-white p-8 md:p-12 rounded-3xl shadow-[0_0_50px_-12px_rgba(234,88,12,0.15)] border border-slate-100 max-w-4xl mx-auto relative z-10">
-            <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-6">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              className="flex flex-col gap-6"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Left Column */}
                 <div className="flex flex-col gap-6">
-                  <input type="hidden" name="access_key" value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2" />
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="75a6dce0-fd56-4a07-8fdf-96b1af7c5da2"
+                  />
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://penguinbookpublishers.com/thank-you"
+                  />
+
                   <input
                     type="text"
                     name="name"
@@ -110,14 +124,16 @@ export default function ContactPage() {
                     required
                     className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-700 bg-white"
                   />
-                  <select name="service" className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-500 bg-white appearance-none">
+                  <select
+                    name="service"
+                    required
+                    className="w-full border border-orange-200 rounded-md p-3.5 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition text-slate-500 bg-white appearance-none"
+                  >
                     <option value="" disabled selected>
                       Select Service
                     </option>
-                    <option value="book-writing">Book Writing</option>
-                    <option value="ebook-writing">
-                      eBook Writing & Publishing
-                    </option>
+                    <option value="book-writing">GhostWriting</option>
+                    <option value="book-publishing">Book Publishing</option>
                     <option value="book-editing">
                       Book Editing & Proofreading
                     </option>
@@ -128,10 +144,14 @@ export default function ContactPage() {
                     <option value="book-printing">Book Printing</option>
                     <option value="book-marketing">Book Marketing</option>
                     <option value="authors-website">Author's Website</option>
-                    <option value="amazon-publishing">Amazon Publishing</option>
-                    <option value="article-writing">Article Writing</option>
-                    <option value="book-trailer">Book Trailer Services</option>
-                    <option value="kindle-vella">Kindle Vella</option>
+                    <option value="global-distributions">
+                      Global Distributions
+                    </option>
+                    <option value="article-writing">
+                      Article Writing & Blogs
+                    </option>
+                    <option value="book-trailer">Book Video Trailer</option>
+                    <option value="audio-book">Audio Book</option>
                   </select>
                 </div>
 

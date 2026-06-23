@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import {
   MessageSquare,
@@ -94,6 +94,8 @@ export default function Home() {
   const toggleFAQ = (index: number) => {
     setActiveFAQ(activeFAQ === index ? null : index);
   };
+
+
 
   return (
     <div className="w-full bg-slate-50 font-sans">
